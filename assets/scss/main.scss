@@ -1,0 +1,52 @@
+main {
+  background-color: $color-terceary;
+
+  section {
+    div {
+
+      &.main-wrapper {
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        width: 96vw;
+      }
+
+      div {
+
+        &.texto-apresentacao {
+
+          h1 {
+            font-size: 48px;
+            color: $color-secondary;
+            font-weight: 400;
+          }
+
+          h3 {
+            color: $color-secondary;
+            font-weight: 700;
+          }
+        }
+
+        button {
+          background-color: $color-quaternary;
+          width: 250px;
+          height: 59px;
+          border-radius: 10px;
+          border: none;
+          font-size: $li-font;
+          font-weight: 300;
+          transition: width 0.9s ease-in-out;
+
+          &:hover {
+            width: 300px;
+          }
+
+          a {
+            color: $color-secondary;
+
+          }
+        }
+      }
+    }
+  }
+}

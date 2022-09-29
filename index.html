@@ -1,114 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
 </head>
+
 <body>
     <!-- HEADER -->
-<header>
-    <div class="flex-container menu">
-        <div class="container">
-            <div><h1>&ltJRA&gt</h1></div>
-        <ul class="list-items">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#Projetos">Projetos</a></li>
-            <li><a href="#Servicos">Serviços</a></li>
-            <li><a href="#Conhecimentos">Conhecimentos</a></li>
-        </ul>
-        </div>
-    </div>
-</header>
+    <header>
+        <section class="flex-container">
+            <!-- NAV -->
+            <nav>
+                <h1>&ltJRA&gt</h1>
+                <!-- LIST-NAV -->
+                <ul class="row">
+                    <li class="list-item">
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#Projetos">Projetos</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#Servicos">Serviços</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#Conhecimentos">Conhecimentos</a>
+                    </li>
+                </ul>
+                <!-- END LIST-NAV -->
+            </nav>
+            <!-- END NAV -->
 
-<main>
+            <!-- MENU HAMBURGUER -->
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <!-- PALITOS DO MENU HAMBURGUER -->
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <!-- END PALITOS DO MENU HAMBURGUER -->
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-items">
+                        <!-- ITEMS MENU HAMBURGUER -->
+                        <ul>
+                            <li class="toogle-item">
+                                <a href="#sobre">Sobre</a>
+                            </li>
+                            <li class="toogle-item">
+                                <a href="#Projetos">Projetos</a>
+                            </li>
+                            <li class="toogle-item">
+                                <a href="#Servicos">Serviços</a>
+                            </li>
+                            <li class="toogle-item">
+                                <a href="#Conhecimentos">Conhecimentos</a>
+                            </li>
+                        </ul>
+                        <!-- END ITEMS MENU HAMBURGUER -->
+                    </nav>
+                </div>
+            </div>
+            <!-- END MENU HAMBURGUER -->
+        </section>
+    </header>
+    <!-- END HEADER -->
 
     <!-- MAIN -->
+    <main>
+        <!-- SECTION -->
+        <section class="flex-container">
+            <!-- DIV -->
+            <div class="main-wrapper row">
+                <!-- TEXTO APRESENTACAO -->
+                <div class="texto-apresentacao">
+                    <h3 class="fadeInDown">Olá, eu sou</h3><br>
+                    <h1>Junior Andrade</h1><br>
+                    <h3><span class="typewriter">Full-Stack developer</span></h3>
+                    <br>
+                    <button><a href="https://www.linkedin.com/in/133b4a1aa/" target="_blank">Linkedin</a></button>
+                </div>
+                <!-- END TEXTO APRESENTACAO -->
 
-    <section id="s-main">
-        <div class="flex-container apresentacao">
-          <div class="container">
-            <div class="texto-apresentacao">
-                <h3>Olá, eu sou</h3><br>
-                <h1>Junior Andrade</h1><br>
-                <h3 class="typewriter">Full-Stack developer Junior</h3><br>
-                <button><a href="https://www.linkedin.com/in/133b4a1aa/" target="_blank">Linkedin</a></button>
+                <!-- IMG -->
+                <div>
+                    <div><img src="assets/images/home-image.gif" width="240px" height="190px" alt="gif"></div>
+                </div>
+                <!-- END IMG -->
+
+                <!-- END DIV -->
             </div>
-            <div>
-                <div><img src="assets/images/home-image.gif" width="240px" height="190px" alt="gif"></div>
-            </div>
-          </div>
-        </div>
-    </section>
+            <!-- END SECTON -->
+        </section>
+    </main>
+    <!-- MAIN -->
 
     <!-- CARDS -->
 
+    <!-- SECTION -->
     <section>
+        <!-- P -->
         <p id="projects">Projetos</p>
+        <!-- END P -->
+
+        <!--CONTAINER CARD -->
         <div class="container-card">
+
+            <!--CARD CONTAINER -->
             <div class="card-container">
+
+                <!--CARD TEXT -->
                 <div class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.
                 </div>
+                <!--END CARD TEXT -->
+
                 <div id="card-one" class="card">
                     <div class="card-wrapper">
                         <h2>Github</h2>
                         <p>Veja meus Projetos</p>
                     </div>
                 </div>
+                <!--END CARD CONTAINER -->
             </div>
+
+            <!--CARD CONTAINER -->
             <div class="card-container">
-              <div id="card-two" class="card">
-                  <div class="card-wrapper">
-                      <h2>Linkedin</h2>
-                      <p>Acompanhe minha carreira!</p>
-                  </div>
-              </div>
-              <div class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <div id="card-two" class="card">
+                    <div class="card-wrapper">
+                        <h2>Linkedin</h2>
+                        <p>Acompanhe minha carreira!</p>
+                    </div>
                 </div>
-          </div>
-          <div class="card-container">
-              <div class="card-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </div>
-              <div id="card-three" class="card">
-                  <div class="card-wrapper">
-                      <h2>Instagram</h2>
-                      <p>Ou mais do meu dia-a-dia ;]</p>
-                  </div>
-              </div>
-          </div>
-  
+
+                <!--CARD TEXT -->
+                <div class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.
+                </div>
+                <!--END CARD TEXT -->
+            </div>
+            <!--END CONTAINER -->
+
+            <!--CARD CONTAINER -->
+            <div class="card-container">
+                <!--CARD TEXT -->
+                <div class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.
+                </div>
+                <!--END CARD TEXT -->
+
+                <div id="card-three" class="card">
+                    <div class="card-wrapper">
+                        <h2>Instagram</h2>
+                        <p>Ou mais do meu dia-a-dia ;]</p>
+                    </div>
+                </div>
+                <!-- END CARD CONTAINER -->
+            </div>
+
+
+            <!-- END CONTAINER CARD -->
         </div>
+
+        <!-- END SECTION -->
     </section>
 
-    <!-- Skills -->
-    
-        <!-- /Skills  -->
+    <!-- FOOTER -->
+    <footer>
+        <!-- SECTION -->
+        <section class="flex-container">
+            <!-- CONTAINER SOCIAL MEDIA E P -->
+            <div class="row">
+                <!--SOCIAL MEDIA -->
+                <div class="social-media-footer">
+                    <a href="https://www.facebook.com/profile.php?id=100012552466178" target="_blank">
+                        <img src="assets/icons/facebook.svg" alt="facebook icon">
+                    </a>
+                    <a href="https://github.com/juniorandrades" target="_blank">
+                        <img src="assets/icons/github.svg" alt="github icon">
+                    </a>
+                    <a href="https://www.instagram.com/juniorandrades2000/" target="_blank">
+                        <img src="assets/icons/instagram.svg" alt="instagram icon">
+                    </a>
+                    <!--END SOCIAL MEDIA -->
+                </div>
+                <!--P -->
 
-        <footer>
-        <div class="flex-container">
-            <div class="social-media-footer">
-                <a href="https://www.facebook.com/profile.php?id=100012552466178" target="_blank">
-                    <img src="assets/icons/facebook.svg" alt="facebook icon">
-                </a>
-                <a href="https://github.com/juniorandrades" target="_blank">
-                    <img src="assets/icons/github.svg" alt="github icon">
-                </a>
-                <a href="https://www.instagram.com/juniorandrades2000/" target="_blank">
-                    <img src="assets/icons/instagram.svg" alt="instagram icon">
-                </a>
+                <p>© &ltJRA.COM&gt</p>
+
+                <!--END P -->
+
+                <!-- END CONTAINER SOCIAL MEDIA E P -->
             </div>
-            <p id="direitos-autorais">© &ltJRA.COM&gt</p>
-        </div>
-          </footer>
+            <!-- END SECTION -->
+        </section>
+    </footer>
+    <!-- END FOOTER -->
 
-</main>
-
-<script src="/assets/js/script.js"></script>
+    <script src="assets/js/typeitjs.umd.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>

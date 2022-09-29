@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px auto;
+  width: 1024px;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px auto;
+  width: 90vw;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}

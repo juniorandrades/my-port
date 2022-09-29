@@ -1,0 +1,180 @@
+/* CARDS */
+
+/* SECTION */
+section {
+
+  /* P */
+  p {
+    &#projects {
+      display: flex;
+      font-size: 3rem;
+      justify-content: center;
+      margin: auto;
+      align-items: center;
+    }
+  }
+
+  /* END P */
+
+  /* CONTAINER CARD  */
+  div {
+    &.container-card {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 3rem 0;
+    }
+
+    /* CARD CONTAINER */
+    div {
+
+
+      &.card-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+      }
+
+      /* CARD TEXT */
+      div {
+        &.card-text {
+          width: 40%;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+          color: rgb(109, 109, 109);
+          text-align: justify;
+        }
+
+        /* END CARD TEXT */
+      }
+
+      /* CARD */
+      div {
+        &.card {
+          height: 300px;
+          width: 400px;
+          margin: 3rem 0 0;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          filter: grayscale(0.5);
+          color: #ffffff;
+          cursor: pointer;
+          transition: 0.3s;
+
+          /* FILTRO HOVER */
+          &:hover {
+            filter: unset;
+          }
+
+          /* END FILTRO HOVER */
+
+
+          /* CARD WRAPPER */
+          div {
+            &.card-wrapper {
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+
+              &::before {
+                content: '';
+                position: absolute;
+                height: 100px;
+                width: 100px;
+                display: block;
+                border: 1px solid white;
+                opacity: 0;
+                transition: 0.3s;
+              }
+            }
+
+            /* END CARD WRAPPER */
+          }
+        }
+
+        /* END CARD */
+      }
+
+      /* END CARD CONTAINER */
+    }
+
+    /* END CONTAINER CARD */
+  }
+
+}
+
+/* END SECTION */
+
+
+
+/* IMAGES CARDS */
+
+#card-one {
+  background-image: url('../images/memory-game.png');
+}
+
+#card-two {
+  background-image: url('../images/flex-landing-page1.png');
+  color: rgb(18, 18, 20);
+}
+
+#card-three {
+  background-image: url('../images/joga-da-velha1.png');
+  color: rgb(18, 18, 20);
+}
+
+/* END IMAGES CARDS */
+
+
+/* H2 CARD WRAPPER */
+.card-wrapper h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.3s;
+
+}
+
+/* END H2 CARD WRAPPER */
+
+
+/* P CARD WRAPPER */
+
+.card-wrapper p {
+  font-size: 0;
+  visibility: hidden;
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+/* END P CARD WRAPPER */
+
+
+
+.card:hover>.card-wrapper::before {
+  opacity: 1;
+  width: 350px;
+  height: 250px;
+}
+
+.card:hover>.card-wrapper p {
+  font-size: 14px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* FIM DE CARDS */

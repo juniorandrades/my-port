@@ -1,0 +1,40 @@
+/* FOOTER */
+footer {
+  background-color: $color-primary;
+  height: 80px;
+
+  /* SECTION */
+  section {
+
+    /* DIV */
+    div {
+      justify-content: space-between;
+      line-height: 80px;
+      align-items: center;
+
+      /* DIV */
+      div {
+        a {
+          padding: 0.6rem;
+        }
+      }
+
+      /* END DIV */
+
+      /* P */
+
+      p {
+        color: $color-secondary;
+        font-size: 1.3rem;
+      }
+
+      /* END P */
+    }
+
+    /* END DIV */
+
+    /* END SECTION */
+  }
+}
+
+/* END FOOTER */
